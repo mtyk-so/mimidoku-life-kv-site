@@ -1,0 +1,8 @@
+[
+  { "id": "all", "name": "すべて" },
+  { "id": "business", "name": "ビジネス・仕事術" },
+  { "id": "self-help", "name": "自己啓発・マインド" },
+  { "id": "novel", "name": "小説・エンタメ" },
+  { "id": "finance", "name": "お金・投資" },
+  { "id": "liberal-arts", "name": "教養・サイエンス" }
+]

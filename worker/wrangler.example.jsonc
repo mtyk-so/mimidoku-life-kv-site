@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mimidoku-life-kv-cms",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-01",
+  "kv_namespaces": [
+    {
+      "binding": "CMS_KV",
+      "id": "<kv-id>"
+    }
+  ]
+}

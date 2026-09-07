@@ -1,0 +1,62 @@
+[
+  {
+    "id": "book-01",
+    "title": "人は話し方が9割",
+    "author": "永松茂久",
+    "narrator": "魚住りえ",
+    "tagId": "self-help",
+    "duration": "4時間45分",
+    "badge": "30日間無料体験対象",
+    "description": "会話が苦手な人でも自然と好かれる話し方のコツを、具体例を交えて解説する一冊。会話・雑談・褒め方など、日常のあらゆる場面で使える技術を紹介しています。",
+    "impression": "",
+    "link": "https://px.a8.net/svt/ejp?a8mat=4BC2EL+2N9ECA+5TB0+5YJRM"
+  },
+  {
+    "id": "book-02",
+    "title": "ジェームズ・クリアー式 複利でよい習慣をつくる方法",
+    "author": "ジェームズ・クリアー",
+    "narrator": "安原義人",
+    "tagId": "self-help",
+    "duration": "8時間12分",
+    "badge": "世界的ベストセラー",
+    "description": "わずか1%の改善が人生を変えるという考え方のもと、習慣化の仕組みを行動科学の知見から解説する世界的ベストセラー。",
+    "impression": "",
+    "link": "https://px.a8.net/svt/ejp?a8mat=4BC2EL+2N9ECA+5TB0+5YJRM"
+  },
+  {
+    "id": "book-03",
+    "title": "本当の自由を手に入れる お金の大学",
+    "author": "両@リベ大学長",
+    "narrator": "野村達也",
+    "tagId": "finance",
+    "duration": "7時間30分",
+    "badge": "お金の基本",
+    "description": "貯める・稼ぐ・増やす・守る・使うという、一生困らないお金の基本を網羅的にまとめた一冊。",
+    "impression": "",
+    "link": "https://px.a8.net/svt/ejp?a8mat=4BC2EL+2N9ECA+5TB0+5YJRM"
+  },
+  {
+    "id": "book-04",
+    "title": "FACTFULNESS（ファクトフルネス）",
+    "author": "ハンス・ロスリング",
+    "narrator": "星野充昭",
+    "tagId": "liberal-arts",
+    "duration": "10時間15分",
+    "badge": "教養",
+    "description": "データと事実にもとづいて世界を正しく見る習慣について書かれた一冊。10の思い込みを切り口に、認知のクセを解説しています。",
+    "impression": "",
+    "link": "https://px.a8.net/svt/ejp?a8mat=4BC2EL+2N9ECA+5TB0+5YJRM"
+  },
+  {
+    "id": "book-05",
+    "title": "同志少女よ、敵を撃て",
+    "author": "逢坂冬馬",
+    "narrator": "青木瑠璃子",
+    "tagId": "novel",
+    "duration": "15時間40分",
+    "badge": "本屋大賞受賞作",
+    "description": "独ソ戦の最前線に身を投じた少女狙撃兵たちを描いた、本屋大賞受賞作。",
+    "impression": "",
+    "link": "https://px.a8.net/svt/ejp?a8mat=4BC2EL+2N9ECA+5TB0+5YJRM"
+  }
+]

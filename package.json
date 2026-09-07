@@ -1,0 +1,11 @@
+{
+  "name": "mimidoku-life-kv-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "import": "node tools/import-to-kv.mjs",
+    "deploy": "wrangler pages deploy public --project-name=mimidoku-life --branch=main --commit-dirty=true"
+  }
+}
