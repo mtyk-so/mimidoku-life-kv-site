@@ -6,6 +6,11 @@
   "scripts": {
     "start": "node server.mjs",
     "import": "node tools/import-to-kv.mjs",
-    "deploy": "wrangler pages deploy public --project-name=mimidoku-life --branch=main --commit-dirty=true"
+    "deploy": "wrangler pages deploy public --project-name=mimidoku-life --branch=main --commit-dirty=true",
+    "build": "node tools/build-site.mjs",
+    "build:release": "node tools/build-site.mjs --release"
+  },
+  "devDependencies": {
+    "marked": "17.0.5"
   }
 }
