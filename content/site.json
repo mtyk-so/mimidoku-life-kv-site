@@ -1,5 +1,4 @@
 {
-  "author": "",
   "heroImage": "/images/title.png",
   "heroAlt": "窓辺の木のテーブルに置いた本、眼鏡、イヤホンのイメージ画像",
   "articles": [
@@ -7,6 +6,7 @@
       "slug": "kirawareru-yuki",
       "category": "体験と気づき",
       "date": "2026-09-07",
+      "author": "マツユキ",
       "description": "10年以上前に読んだ『嫌われる勇気』を、今度は音声で。家事や散歩の中で聴いて、感じたことを綴りました。",
       "image": "/images/202609072204.jpeg",
       "imageAlt": "雨に濡れた路地に置かれた青い透明な傘",
@@ -17,6 +17,7 @@
       "slug": "audible-beginners-guide",
       "category": "はじめてのAudible",
       "date": "2026-09-07",
+      "author": "耳読ライフ",
       "checkedDate": "2026-09-07",
       "description": "どんな作品がある？ 無料でも試せる？ 料金の確認から最初の1冊の選び方、再生するまでをまとめました。",
       "image": "/images/title.png",

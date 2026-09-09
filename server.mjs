@@ -18,10 +18,21 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
-  let reqPath = req.url.split("?")[0];
+  const [rawPath, query = ""] = req.url.split("?", 2);
+  let reqPath = decodeURIComponent(rawPath);
+
+  // Match Cloudflare Pages: .html URLs redirect to their extensionless canonical URL.
+  if (reqPath.endsWith(".html") && reqPath !== "/404.html") {
+    const canonicalPath = reqPath === "/index.html" ? "/" : reqPath.slice(0, -5);
+    const location = query ? `${canonicalPath}?${query}` : canonicalPath;
+    res.writeHead(308, { Location: location });
+    res.end();
+    return;
+  }
+
   if (reqPath === "/") reqPath = "/index.html";
 
-  const filePath = path.resolve(PUBLIC_DIR, "." + decodeURIComponent(reqPath));
+  const filePath = path.resolve(PUBLIC_DIR, "." + reqPath);
 
   // public/ の外に出るパス（../ など）は配信しない
   if (filePath !== PUBLIC_DIR && !filePath.startsWith(PUBLIC_DIR + path.sep)) {
@@ -30,8 +41,37 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  const serveFile = candidatePath => {
+    const ext = path.extname(candidatePath).toLowerCase();
+    const contentType = MIME_TYPES[ext] || "application/octet-stream";
+
+    res.writeHead(200, { "Content-Type": contentType });
+    fs.createReadStream(candidatePath).pipe(res);
+  };
+
   fs.stat(filePath, (err, stats) => {
-    if (err || !stats.isFile()) {
+    if (!err && stats.isFile()) {
+      serveFile(filePath);
+      return;
+    }
+
+    // Match Cloudflare Pages: extensionless article URLs serve the matching HTML file.
+    const htmlPath = path.extname(filePath) ? null : filePath + ".html";
+    if (htmlPath) {
+      fs.stat(htmlPath, (htmlErr, htmlStats) => {
+        if (!htmlErr && htmlStats.isFile()) {
+          serveFile(htmlPath);
+          return;
+        }
+
+        sendNotFound();
+      });
+      return;
+    }
+
+    sendNotFound();
+
+    function sendNotFound() {
       res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
       const notFoundPath = path.join(PUBLIC_DIR, "404.html");
       if (fs.existsSync(notFoundPath)) {
@@ -39,14 +79,7 @@ const server = http.createServer((req, res) => {
       } else {
         res.end("<h1>404 Not Found</h1>");
       }
-      return;
     }
-
-    const ext = path.extname(filePath).toLowerCase();
-    const contentType = MIME_TYPES[ext] || "application/octet-stream";
-
-    res.writeHead(200, { "Content-Type": contentType });
-    fs.createReadStream(filePath).pipe(res);
   });
 });
 
