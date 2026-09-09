@@ -3,6 +3,17 @@
   "heroAlt": "窓辺の木のテーブルに置いた本、眼鏡、イヤホンのイメージ画像",
   "articles": [
     {
+      "slug": "kaji-no-jikan",
+      "category": "耳読のある暮らし",
+      "date": "2026-09-10",
+      "author": "耳読ライフ",
+      "description": "夕食後にひと息ついてAudibleを再生し、そのまま後片付けへ。家事の時間に読書を重ねる場面を紹介します。",
+      "image": "/images/kaji.png",
+      "imageAlt": "夕食後の静かなキッチンと、木のテーブルに置かれたスマートフォンとイヤホン",
+      "imageNote": "夕食後のキッチンと、聴く読書の時間",
+      "source": "2026-09-10-耳読ライフ-家事をしながらAudibleを聴く-たたき台-v4.md"
+    },
+    {
       "slug": "kirawareru-yuki",
       "category": "体験と気づき",
       "date": "2026-09-07",
@@ -28,9 +39,9 @@
   ],
   "scenes": [
     {
-      "title": "家事の合間に",
-      "description": "手を動かしながら、本の続きを。",
-      "articleSlug": ""
+      "title": "家事の時間に、本の続きを",
+      "description": "夕食後のひと息から、そのまま後片付けへ。",
+      "articleSlug": "kaji-no-jikan"
     },
     {
       "title": "散歩の時間に",
