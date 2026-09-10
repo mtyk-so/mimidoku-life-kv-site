@@ -40,6 +40,8 @@
 @media(max-width:540px){.footer-meta{align-items:flex-start;text-align:left}}
 .hero-visual{position:relative;aspect-ratio:1143/585;overflow:hidden}
 .hero-visual img.hero-photo{position:absolute;inset:0 auto auto 0;width:106.5%;height:auto!important;max-width:none;aspect-ratio:auto}
+.photo[src="/images/title3.png"]{object-position:right center}
+.hero-visual img.hero-photo[src="/images/title3.png"]{inset:0 0 auto auto}
 @media(max-width:540px){
   .hero-copy{position:static;max-width:none;margin:0;padding:25px 6% 28px}
   .hero h1{font-size:25px}

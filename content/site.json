@@ -1,16 +1,38 @@
 {
-  "heroImage": "/images/title.png",
-  "heroAlt": "窓辺の木のテーブルに置いた本、眼鏡、イヤホンのイメージ画像",
+  "heroImage": "/images/title3.png",
+  "heroAlt": "窓辺の木のテーブルに置かれた白い本、眼鏡、白いイヤホン",
   "articles": [
+    {
+      "slug": "hitoiki-no-toki",
+      "category": "耳読のある暮らし",
+      "date": "2026-09-10",
+      "author": "耳読ライフ",
+      "description": "飲み物を用意して、今日は1話だけ。短い休憩の中に、声で聴く読書を置く場面を紹介します。",
+      "image": "/images/hitoiki.png",
+      "imageAlt": "木のテーブルに置かれた、コーヒーの入った白いカップと木のスプーン",
+      "imageNote": "コーヒーと一緒に過ごす、短い休憩の時間",
+      "source": "2026-09-10-耳読ライフ-ひと息つくときにAudibleを聴く-たたき台.md"
+    },
+    {
+      "slug": "sanpo-no-jikan",
+      "category": "耳読のある暮らし",
+      "date": "2026-09-10",
+      "author": "耳読ライフ",
+      "description": "聴きかけの本を用意して、いつもの道へ。歩くことを優先しながら、散歩の時間に読書を重ねる場面を紹介します。",
+      "image": "/images/sanpo.png",
+      "imageAlt": "木漏れ日が差す、緑に囲まれた静かな散歩道",
+      "imageNote": "木漏れ日の中を歩く、いつもの散歩の時間",
+      "source": "2026-09-10-耳読ライフ-散歩の時間にAudibleを聴く-たたき台.md"
+    },
     {
       "slug": "kaji-no-jikan",
       "category": "耳読のある暮らし",
       "date": "2026-09-10",
       "author": "耳読ライフ",
       "description": "夕食後にひと息ついてAudibleを再生し、そのまま後片付けへ。家事の時間に読書を重ねる場面を紹介します。",
-      "image": "/images/kaji.png",
-      "imageAlt": "夕食後の静かなキッチンと、木のテーブルに置かれたスマートフォンとイヤホン",
-      "imageNote": "夕食後のキッチンと、聴く読書の時間",
+      "image": "/images/kaji3.png",
+      "imageAlt": "木のテーブルに置かれた布巾、伏せた白いカップ、木のスプーン",
+      "imageNote": "洗い物を終えたあとの、静かな家事の時間",
       "source": "2026-09-10-耳読ライフ-家事をしながらAudibleを聴く-たたき台-v4.md"
     },
     {
@@ -31,8 +53,8 @@
       "author": "耳読ライフ",
       "checkedDate": "2026-09-07",
       "description": "どんな作品がある？ 無料でも試せる？ 料金の確認から最初の1冊の選び方、再生するまでをまとめました。",
-      "image": "/images/title.png",
-      "imageAlt": "窓辺の木のテーブルに置いた本、眼鏡、イヤホンのイメージ画像",
+      "image": "/images/title3.png",
+      "imageAlt": "窓辺の木のテーブルに置かれた白い本、眼鏡、白いイヤホン",
       "imageNote": "スマートフォンと、ひと息つく時間",
       "source": "2026-09-07-耳読ライフ-Audible初心者ガイド.md"
     }
@@ -44,14 +66,14 @@
       "articleSlug": "kaji-no-jikan"
     },
     {
-      "title": "散歩の時間に",
+      "title": "散歩の時間に、本の続きを",
       "description": "いつもの道と、新しいことば。",
-      "articleSlug": ""
+      "articleSlug": "sanpo-no-jikan"
     },
     {
-      "title": "ひと息つくときに",
+      "title": "ひと息つくときに、1話だけ",
       "description": "読み終えることを、急がずに。",
-      "articleSlug": ""
+      "articleSlug": "hitoiki-no-toki"
     }
   ]
 }
