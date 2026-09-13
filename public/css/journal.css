@@ -38,11 +38,27 @@
 .footer-meta{display:flex;flex-direction:column;align-items:flex-end;gap:6px;text-align:right;color:var(--muted);font-size:10px}
 .site-footer .affiliate-disclosure{max-width:none;margin:0;padding:0;font-size:10px}
 @media(max-width:540px){.footer-meta{align-items:flex-start;text-align:left}}
-.hero-visual{position:relative;aspect-ratio:1143/585;overflow:hidden}
-.hero-visual img.hero-photo{position:absolute;inset:0 auto auto 0;width:106.5%;height:auto!important;max-width:none;aspect-ratio:auto}
 .photo[src="/images/title3.png"]{object-position:right center}
-.hero-visual img.hero-photo[src="/images/title3.png"]{inset:0 0 auto auto}
+.intro-link-only{justify-content:flex-end}
+.story-meta{align-items:center;gap:14px;flex-wrap:wrap}
+.card-cta{display:inline-flex;align-items:center;justify-content:space-between;gap:14px;min-width:128px;min-height:40px;margin-left:auto;padding:7px 12px;border:1px solid #aeb9ac;background:#fff;color:var(--accent);font:500 11px/1.5 var(--sans);letter-spacing:.04em;transition:background-color .2s,color .2s,border-color .2s}
+.story-card:hover .card-cta,.scene-item:hover .card-cta{background:var(--accent);border-color:var(--accent);color:#fff}
+.scene-cta{margin:14px 0 0}
 @media(max-width:540px){
   .hero-copy{position:static;max-width:none;margin:0;padding:25px 6% 28px}
   .hero h1{font-size:25px}
+  .card-cta{min-height:44px;padding:9px 13px}
 }
+
+/* Keep card actions aligned without truncating variable-length copy. */
+.story-card{display:flex;flex-direction:column}
+.story-copy{display:flex;flex:1;flex-direction:column}
+.story-meta{margin-top:auto;padding-top:20px}
+.scene-item{display:flex;flex-direction:column}
+.scene-item p{margin-bottom:14px}
+.scene-cta{align-self:flex-start;margin-top:auto}
+@media(max-width:540px){.story-meta{padding-top:16px}}
+
+.getting-started .text-link{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:40px;margin-top:20px;padding:7px 12px;border:1px solid #aeb9ac;color:var(--accent);font:500 11px/1.5 var(--sans);letter-spacing:.04em;transition:background-color .2s,color .2s,border-color .2s}
+.getting-started .text-link:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+@media(max-width:540px){.getting-started .text-link{min-height:44px;padding:9px 13px}}
